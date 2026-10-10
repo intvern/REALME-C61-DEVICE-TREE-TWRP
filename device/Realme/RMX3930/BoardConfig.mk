@@ -33,7 +33,8 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # Настройки TWRP для Virtual A/B и Dynamic Partitions
 board_build_system_root_image := true
-BOARD_USES_RECOVERY_AS_BOOT := true
+# BOARD_USES_RECOVERY_AS_BOOT := true
+BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 TARGET_NO_RECOVERY := true
 BOARD_USES_GENERIC_KERNEL_IMAGE := true
 
