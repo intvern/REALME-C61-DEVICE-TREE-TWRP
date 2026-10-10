@@ -45,3 +45,7 @@ TW_INCLUDE_CRYPTO := true
 TW_USERDATA_MOUNT_POINT := /data
 TW_BRIGHTNESS_PATH := "/sys/class/backlight/panel0-backlight/brightness"
 TW_MAX_BRIGHTNESS := 2047
+
+# Путь к prebuilt DTB
+BOARD_PREBUILT_DTBIMAGE := $(DEVICE_PATH)/prebuilt/dtb.img
+BOARD_MKBOOTIMG_ARGS += --dtb $(BOARD_PREBUILT_DTBIMAGE)
