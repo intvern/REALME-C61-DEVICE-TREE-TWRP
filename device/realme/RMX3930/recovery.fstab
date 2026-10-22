@@ -1,0 +1,10 @@
+# ~/twrp_android/device/realme/RMX3930/recovery.fstab
+# <mount_point>   <fstype>    <device>                               <options>
+/system            ext4        system                                 display="System";logical
+/vendor            ext4        vendor                                 display="Vendor";logical
+/product           ext4        product                                display="Product";logical
+/metadata          ext4        /dev/block/by-name/metadata            display="Metadata"
+/data              f2fs        /dev/block/by-name/userdata            loginwithcrypto
+/boot              emmc        /dev/block/by-name/boot                display="Boot";backup=1
+/vendor_boot       emmc        /dev/block/by-name/vendor_boot         display="Vendor Boot";backup=1
+
